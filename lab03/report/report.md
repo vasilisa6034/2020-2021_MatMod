@@ -90,10 +90,10 @@ c1 = 0.4
 h1 = 0.27
 
 def P1(t):
-    p1 = np.sin(t + 1)
+    p1 = np.fabs(np.sin(t + 1))
     return p1
 def Q1(t):
-    q1 = np.cos(t + 2)
+    q1 = np.fabs(np.cos(t + 2))
     return q1
 ```
 
@@ -148,10 +148,10 @@ c2 = 0.62
 h2 = 0.13
 
 def P2(t):
-    p2 = np.sin(2*t)
+    p2 = np.fabs(np.sin(2*t))
     return p2
 def Q2(t):
-    q2 = np.cos(t)
+    q2 = np.fabs(np.cos(t))
     return q2
 ```
 
@@ -207,17 +207,17 @@ dt = 0.05
 t = np.arange(t0, tmax, dt)
 
 def P1(t):
-    p1 = np.sin(t + 1)
+    p1 = np.fabs(np.sin(t + 1))
     return p1
 def Q1(t):
-    q1 = np.cos(t + 2)
+    q1 = np.fabs(np.cos(t + 2))
     return q1
 
 def P2(t):
-    p2 = np.sin(2*t)
+    p2 = np.fabs(np.sin(2*t))
     return p2
 def Q2(t):
-    q2 = np.cos(t)
+    q2 = np.fabs(np.cos(t))
     return q2
 
 def S1(f, t):
